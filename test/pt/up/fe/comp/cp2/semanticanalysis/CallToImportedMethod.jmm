@@ -1,0 +1,23 @@
+import A;
+import B;
+import C;
+
+class CallToMethodAssumedInImport extends A {
+
+    public static void main(String[] args) {
+
+    }
+
+    public int foo() {
+        A a;
+        B b;
+        C c;
+        int d;
+        int e;
+        d = 1;
+        e = 2;
+        b = b.bar(c, d);
+
+        return d;
+    }
+}
